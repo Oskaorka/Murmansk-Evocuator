@@ -85,21 +85,25 @@ $(document).ready(function () {
 
 
     // });
-
+    let emailBt = document.querySelector('.email-bt');
+    let callBt = document.querySelector('.callback-bt');
 
     //modal window
     $('[data-modal=button]').on('click', function () {
         $('.overlay, #button').fadeIn('slow');
+        $('.email-bt, .callback-bt').fadeOut('slow');
     });
     $('.modal__close').on('click', function () {
         $('.overlay, #button, #thanks, #order').fadeOut('slow');
+        $('.email-bt, .callback-bt').fadeIn('slow');
     });
-    // 		$('.button_mini').each(function(i) {
-    // 		$(this).on('click', function() {
-    // 				$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-    // 				$('.overlay, #order').fadeIn('slow');
-    // 		});
-    // });
+
+    $('.button_mini').each(function (i) {
+        $(this).on('click', function () {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
 
     $('form').submit(function (e) {
         e.preventDefault();
@@ -201,6 +205,7 @@ $(document).ready(function () {
 
         function showTabContent(i = 0) {
             tabsContent[i].style.display = 'block';
+            // tabsContent[i].style.display = 'hover';
             tabs[i].classList.add('work__tab_active');
         }
 
