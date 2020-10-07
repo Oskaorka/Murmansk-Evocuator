@@ -34,7 +34,7 @@
                             <li>
                                 <a href="#reviews">
                                     отзывы </a> </li>
-                            <li>
+                            <li class="header__link-phone">
                                 <a href="tel:750-060" class="header__phone">
                                     <img class="header__tel" src="img/icons/phone-call.svg"
                                         alt="Эвакуатор в Мурманске, звоните" width="20em">
@@ -74,7 +74,7 @@
                                 type="text">
                             <input class="about__contact-form-inp" name="phone" required placeholder="Ваш телефон"
                                 type="number">
-                            <textarea class="about__contact-form-textAr" cols="10" rows="8"
+                            <textarea class="about__contact-form-textAr" name="message" cols="10" rows="8"
                                 placeholder="Здесь вы нам можете оставить заказ или обращение">
                             </textarea>
                             <button class="button button_submit">
@@ -118,8 +118,8 @@
                             Работаем круглосуточно и без выходных (24/7)
                         </li>
                         <li class="about__services-list">
-                            Эвакуация любой сложности от 1800 руб <br>
-                            + (за городом от 70 руб/км)возможна эвакуация двух
+                            Эвакуация любой сложности от 1500 руб <br>
+                            + (за городом от 50 руб/км) возможна эвакуация двух
                             автомобилей одновременно, участникам группы
                             <a href="https://m.vk.com/public185255807" class="about__vk">ВКонтакте</a> скидка 10%
                         </li>
@@ -472,8 +472,11 @@ class="reviews__lines">
             <form class="feed-form feed-form_mt25" action="#">
                 <input class="feed-form__inp" name="name" required placeholder="Ваше имя" type="text">
                 <input class="feed-form__inp" name="phone" required placeholder="Ваш телефон" type="number">
-                <input class="feed-form__inp" name="email" required placeholder="Ваш E-mail" type="email">
-                <input class="feed-form__inp" name="message" required placeholder="опишите ваш сайт" type="text">
+                <!-- <input class="feed-form__inp" name="email" required placeholder="Ваш E-mail" type="email"> -->
+                <!-- <input class="feed-form__inp" name="message" required placeholder="опишите ваш сайт" type="text"> -->
+                <textarea class="feed-form__inp feed-form__inp-textar" name="message" cols="10" rows="8"
+                    placeholder="Здесь вы нам можете оставить заказ или обращение">
+                </textarea>
                 <button class="button button_submit">оставить заявку</button>
             </form>
         </div>
@@ -490,14 +493,10 @@ class="reviews__lines">
     <a href="#header" class="pageup">
         <img src="img/slide/up.svg" alt="arrowUp">
     </a>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js">
-    </script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js">
-    </script>
-    <script src="https://kit.fontawesome.com/a076d05399.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
     <!-- <script src="js/tiny-slider.js"> -->
     </script>
