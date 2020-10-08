@@ -523,7 +523,7 @@ h3 {
 .container__footer {
     width: 100%;
     height: 8em;
-    background: url(../img/bacground/concrete-wall-2-1920x1080.png);
+    background: url(../img/bacground/concrete-wall-2-1920x1080.jpg);
 }
 
 .footer__adr {
@@ -1049,22 +1049,29 @@ h3 {
     width: 410px;
     min-height: 430px;
     background-color: #0d0d0d;
-    background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);
-    background: linear-gradient(to bottom, #292e49, #536976, #292e49)
+    background: linear-gradient(to bottom, #e7dd56, #fbd786, #e3fd71);
 }
 
 .modal__close {
     position: absolute;
     top: 0;
-    right: -40px;
+    right: 10px;
     font-size: 41px;
     color: red;
     cursor: pointer
 }
 
+.modal__close:hover {
+    // font-size: 60px;
+    transform: rotateZ(45deg);
+    transition: 0.5s;
+    ;
+
+}
+
 .modal__subtitle {
     font-family: 'Montserrat Alternates', sans-serif;
-    color: #f2f2f2;
+    color: #000;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -1072,12 +1079,13 @@ h3 {
 }
 
 .modal__descr {
-    color: #f2f2f2;
+    color: #000;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 14px;
-    font-weight: 500px;
+    font-weight: 700px;
     text-align: center;
-    padding-top: 15px
+    padding-top: 15px;
+    padding: 15px 15px 0px 15px;
 }
 
 .modal_mini {
@@ -1451,15 +1459,13 @@ h3 {
     }
 
     .modal {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
         width: 300px;
-        min-height: 400px;
-        // background-color: #0d0d0d;
-        background: linear-gradient(to bottom, #e7dd56, #fbd786, #e3fd71);
-        // background: linear-gradient(to bottom, #292e49, #536976, #292e49)
+        // min-height: 400px;
+        // background: linear-gradient(to bottom, #e7dd56, #fbd786, #e3fd71);
     }
 
     .modal__descr {
@@ -1490,20 +1496,3 @@ h3 {
 
     }
 }
-
-// @media (max-width: 576px) {
-//     .container {
-//         min-width: 320px;
-//     }
-// }
-
-
-
-// .button_submit {
-//     font-family: 'Montserrat Alternates', sans-serif;
-//     color: red;
-//     width: 260px;
-//     height: 40px;
-//     font-size: 25px;
-//     margin-top: 30px
-// }
